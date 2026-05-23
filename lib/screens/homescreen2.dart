@@ -5,21 +5,19 @@ class Homescreen2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
-          Text("Hello 1"),
-          Text("Hello 2"),
-          Text("Hello 3"),
-          Text("Hello 4"),
-          Text("Hello 5"),
-          Text("Hello 6"),
-          Text("Hello 7"),
-          Text("Hello 8"),
-          Text("Hello 9"),
-          Text("Hello 10"),
-        ],
-      ),
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(16),
+            child: Image.network(
+              "https://tse2.mm.bing.net/th/id/OIP.BD9cf1eaFBIVQLMXThVtLgHaE6?rs=1&pid=ImgDetMain&o=7&rm=3",
+            ),
+          ),
+        ),
+        
+      ],
     );
   }
 }

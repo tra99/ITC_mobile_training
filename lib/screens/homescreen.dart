@@ -40,14 +40,23 @@ class _HomescreenState extends State<Homescreen> {
           },
           child: Icon(Icons.arrow_back, color: Colors.white),
         ),
+        centerTitle: true,
         title: Text(
           "My HomeScreen",
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700),
         ),
         actions: [
-          Container(
-            margin: EdgeInsets.only(right: 12),
-            child: Icon(Icons.notifications, color: Colors.white),
+          Row(
+            children: [
+              Container(
+                margin: EdgeInsets.only(right: 12),
+                child: Icon(Icons.notifications, color: Colors.white),
+              ),
+              Container(
+                margin: EdgeInsets.only(right: 12),
+                child: Icon(Icons.coffee, color: Colors.white),
+              ),
+            ],
           ),
         ],
       ),
